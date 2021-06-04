@@ -11,13 +11,13 @@ public class MSGrades {
     // Create 4 ArrayLists below all private constant properties (final)
 
     // 1. a new instance of a students ArrayList storing strings
-    List<String> students = new ArrayList<String>();
+    private final List<String> students = new ArrayList<String>();
     // 2. a new instance of a math grades ArrayList storing integers
-    List<Integer> mathGrade = new ArrayList<Integer>();
+    private final List<Integer> mathGrade = new ArrayList<Integer>();
     // 3. a new instance of a science grades ArrayList storing integers
-    List<Integer> scienceGrade = new ArrayList<Integer>();
+    private final List<Integer> scienceGrade = new ArrayList<Integer>();
     // 4. a new instance of a english grades ArrayList storing integers
-    List<Integer> englishGrade = new ArrayList<Integer>();
+    private final List<Integer> englishGrade = new ArrayList<Integer>();
 
 
     public MSGrades(){
