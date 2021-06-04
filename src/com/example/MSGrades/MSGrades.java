@@ -8,13 +8,13 @@ public class MSGrades {
     
     // Create 4 ArrayLists below all private constant properties (final)
         // 1. a new instance of a students ArrayList storing strings
-        ArrayList<String> students = new ArrayList<String>();
+        private final ArrayList<String> students = new ArrayList<String>();
         // 2. a new instance of a math grades ArrayList storing integers
-        ArrayList<String> mathGrades = new ArrayList<String>();
+        private final ArrayList<Integer> mathGrades = new ArrayList<Integer>();
         // 3. a new instance of a science grades ArrayList storing integers
-        ArrayList<String> scienceGrades = new ArrayList<String>();
+        private final ArrayList<Integer> scienceGrades = new ArrayList<Integer>();
         // 4. a new instance of a English grades ArrayList storing integers
-        ArrayList<String> englishGrades = new ArrayList<String>();
+        private final ArrayList<Integer> englishGrades = new ArrayList<Integer>();
 
     public MSGrades() {
         // Add some students and their grades to the ArrayLists
@@ -23,21 +23,21 @@ public class MSGrades {
         students.add("Baylor");
         students.add("Jenna");
         // add two corresponding values for the two students to the math grades ArrayList
-        mathGrades.add("95");
-        mathGrades.add("85");
+        mathGrades.add(95);
+        mathGrades.add(85);
         // add two corresponding values for the two students to the science grades ArrayList
-        scienceGrades.add("75");
-        scienceGrades.add("98");
+        scienceGrades.add(75);
+        scienceGrades.add(98);
         // add two corresponding values for the two students to the english grades ArrayList
-        englishGrades.add("89");
-        englishGrades.add("82");
+        englishGrades.add(89);
+        englishGrades.add(82);
     }
 
     public void printStudents(){
         // loop thru the students ArrayList with a For Each loop
             // print each students name on a new line as output
         for (String student : students) {
-            System.out.println("Current students: " + student);
+            System.out.println(student);
         }
     }
 
