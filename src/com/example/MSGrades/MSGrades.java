@@ -1,34 +1,44 @@
 package com.example.MSGrades;
 // import the java util ArrayList class module
+import java.util.ArrayList;
 
 public class MSGrades {
 
     private final String[] teachers = {"Ms. Smith", "Mr. Johnson", "Mrs. Doe"};
     
     // Create 4 ArrayLists below all private constant properties (final)
-
         // 1. a new instance of a students ArrayList storing strings
-
+        ArrayList<String> students = new ArrayList<String>();
         // 2. a new instance of a math grades ArrayList storing integers
+        ArrayList<String> mathGrades = new ArrayList<String>();
         // 3. a new instance of a science grades ArrayList storing integers
-        // 4. a new instance of a math grades ArrayList storing integers
+        ArrayList<String> scienceGrades = new ArrayList<String>();
+        // 4. a new instance of a English grades ArrayList storing integers
+        ArrayList<String> englishGrades = new ArrayList<String>();
 
-
-    public MSGrades(){
+    public MSGrades() {
         // Add some students and their grades to the ArrayLists
 
-            // add two students to the students ArrayList
-
-            // add two corresponding values for the two students to the math grades ArrayList
-
-            // add two corresponding values for the two students to the science grades ArrayList
-
-            // add two corresponding values for the two students to the english grades ArrayList
+        // add two students to the students ArrayList
+        students.add("Baylor");
+        students.add("Jenna");
+        // add two corresponding values for the two students to the math grades ArrayList
+        mathGrades.add("95");
+        mathGrades.add("85");
+        // add two corresponding values for the two students to the science grades ArrayList
+        scienceGrades.add("75");
+        scienceGrades.add("98");
+        // add two corresponding values for the two students to the english grades ArrayList
+        englishGrades.add("89");
+        englishGrades.add("82");
     }
 
     public void printStudents(){
         // loop thru the students ArrayList with a For Each loop
             // print each students name on a new line as output
+        for (String student : students) {
+            System.out.println("Current students: " + student);
+        }
     }
 
     // Make a method that prints an individual students grades
